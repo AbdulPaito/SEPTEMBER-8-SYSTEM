@@ -44,7 +44,7 @@ if (!$data) {
 
 // Convert the comma-separated list to an array if necessary
 $education = !empty($data['educational_attainment']) ? explode(',', $data['educational_attainment']) : [];
-
+$classifications = explode(',', $data['classification']);
 ?>
 
 
@@ -627,12 +627,12 @@ left: -45px;
     </tr>
     <tr>
       <td><input type="checkbox" <?php echo strpos($data['classification'], 'Displaced Workers') !== false ? 'checked' : ''; ?>> Displaced Workers</td>
-      <td><input type="checkbox" <?php echo strpos($data['classification'], 'Farmers and Fisherman') !== false ? 'checked' : ''; ?>> Farmers and Fisherman</td>
+      <td><input type="checkbox" <?php echo in_array('Farmers and Fisherman', $classifications) ? 'checked' : ''; ?>> Farmers and Fisherman</td>
       <td><input type="checkbox" <?php echo strpos($data['classification'], 'Inmates and Detainees') !== false ? 'checked' : ''; ?>> Inmates and Detainees</td>
     </tr>
     <tr>
       <td><input type="checkbox" <?php echo strpos($data['classification'], 'TVET Trainers') !== false ? 'checked' : ''; ?>> TVET Trainers</td>
-      <td><input type="checkbox" <?php echo strpos($data['classification'], 'Family Members of Farmers and Fisherman') !== false ? 'checked' : ''; ?>> Family Members of Farmers and Fisherman</td>
+      <td><input type="checkbox" <?php echo in_array('Family Members of Farmers and Fisherman', $classifications) ? 'checked' : ''; ?>> Family Members of Farmers and Fisherman</td>
       <td><input type="checkbox" <?php echo strpos($data['classification'], 'Wounded-in-Action AFP & PNP Personnel') !== false ? 'checked' : ''; ?>> Wounded-in-Action AFP & PNP Personnel</td>
     </tr>
     <tr>
