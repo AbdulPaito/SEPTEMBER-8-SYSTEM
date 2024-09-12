@@ -701,10 +701,10 @@ left: -45px;
       <td colspan="3" class="quali">8. Name of Course/Qualification: <input type="text" id="course-qualification" readonly value="<?php echo htmlspecialchars($data['qualification']); ?>"></td>
     </tr>
     <tr>
-      <th colspan="3">9. If Scholar, What Type of Scholarship Package (TWSP, PESFA, STEP, others)?</th>
+      <th colspan="3">9. If Scholar, What Type of Scholarship Package (TWSP, PESFA, STEP)?</th>
     </tr>
     <tr>
-      <td colspan="3" class="quali">9. What Type of Scholarship Package (TWSP, PESFA, STEP, others)?<input type="text" id="scholarship-package" readonly value="<?php echo htmlspecialchars($data['scholarship']); ?>"></td>
+      <td colspan="3" class="quali">9. What Type of Scholarship Package (TWSP, PESFA, STEP)?<input type="text" id="scholarship-package" readonly value="<?php echo htmlspecialchars($data['scholarship']); ?>"></td>
     </tr>
     <tr>
       <th colspan="3">10. Privacy Disclaimer</th>
